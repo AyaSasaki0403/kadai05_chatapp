@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動物チャット</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+
+<body>
+
+<header id="header">
+    <p id="title">Animal Talk</p>
+</header>
+
+
+    <main>
+    <div class="text">
+
+        <p id="speaker">メッセージ発信者の選択</p>
+        <div id="containerChoice">
+            <select name="pref" id="choice">
+                <option value="cheeter">チーター</option>
+                <option value="deer">鹿</option>
+                <option value="rabit">うさぎ</option>
+            </select>
+        </div>
+
+        <div id="containerText">
+            <textarea id="text" placeholder="メッセージを入力してください"></textarea>
+        </div>
+        
+        <div id="containerSend">
+            <button id="send">送信</button>
+        </div>
+
+        <div id="output"></div>
+    </div>
+
+    <div class="image_container">
+        <div class="animal" id="cheeter_container">
+            <img src="image/cheeter.png" alt="cheeter">
+            <div class="messages" id="cheeter_msg"></div>
+        </div>
+        <div class="animal" id="deer_container">
+            <img src="image/deer.png" alt="deer">
+            <div class="messages" id="deer_msg"></div>
+        </div>
+        <div class="animal" id="rabit_container">
+            <img src="image/rabit.png" alt="rabit">
+            <div class="messages" id="rabit_msg"></div>
+        </div>
+    </div>
+
+    </main>
+
+
+    <footer>
+        <div id="footer">Animal Chat.com</div>
+    </footer>
+
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>

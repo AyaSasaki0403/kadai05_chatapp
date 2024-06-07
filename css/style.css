@@ -1,0 +1,91 @@
+#header{
+    height: 80px;
+    background-color: darkgreen;
+    text-align: center;
+}
+
+#title{
+    color: bisque;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+#speaker{
+    font-size: 20px;
+    text-align: center;
+}
+
+#containerChoice, #containerText, #containerSend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#choice{
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    text-align-last: center;
+    margin-bottom: 10px;
+}
+
+#text {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;  /* 水平方向の中央揃え */
+    align-items: center;      /* 垂直方向の中央揃え */
+    text-align: center;       /* テキストの中央揃え */
+    box-sizing: border-box;   /* パディングとボーダーを含む */
+}
+
+#text::placeholder {
+    text-align: center;       /* placeholderテキストの中央揃え */
+}
+
+#send{
+    width: 150px;
+    height: 30px;
+    color: bisque;
+    background-color: darkgreen;
+    border: none;
+    cursor: pointer;
+}
+
+#send:hover{
+    background-color: bisque;
+    color: darkgreen;
+}
+
+.image_container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 150px;
+    width: 100%;
+}
+
+#output{
+    width: 200px;
+    height: auto;
+
+}
+
+p{
+    word-break: break-all;
+    white-space: pre-wrap;
+    max-width: 20ch;
+}
+
+#footer{
+    height: 30px;
+    background-color: darkgreen;
+    color: bisque;
+    font-size: 15px;
+    text-align: center;
+}
